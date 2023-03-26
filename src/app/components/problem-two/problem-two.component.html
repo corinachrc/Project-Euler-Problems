@@ -1,0 +1,20 @@
+<div class="component">
+  <h1>Problem 2</h1>
+  <p class="problem">What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?</p>
+
+
+<div class="resultSpan"  *ngIf="isDisplaying==true">
+    <div  class="text">
+      <h2>Solution</h2>
+    </div>
+    <div class="array">
+      {{productString}}
+    </div>
+
+    <div   class="final">LCM = {{product}}</div>
+  </div>
+
+  <button (click)="solve()" *ngIf="isDisplaying==false">Show solution</button>
+  <button (click)="hide()" *ngIf="isDisplaying==true">Hide solution</button>
+
+</div>

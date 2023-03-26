@@ -1,0 +1,22 @@
+<div class="component">
+  <h1>Problem 3</h1>
+  <p class="problem">Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?</p>
+  <div class="numberDisplay"><span *ngFor="let elem of digits">{{elem}}</span></div>
+
+  <div class="resultSpan"  *ngIf="isDisplaying==true">
+      <div  class="text">
+        <h2>Solution</h2>
+      </div>
+      <div class="array">
+        {{maxProductString}}
+      </div>
+
+      <div   class="final">The greatest product = {{maxProduct}}</div>
+    </div>
+
+    <button (click)="solve()" *ngIf="isDisplaying==false">Show solution</button>
+    <button (click)="hide()" *ngIf="isDisplaying==true">Hide solution</button>
+
+  </div>
+
+

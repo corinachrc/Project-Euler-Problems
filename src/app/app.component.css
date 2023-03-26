@@ -1,0 +1,18 @@
+
+.container{
+    max-width: 800px;
+    min-height: 700px;
+    margin: 50px auto;
+    box-shadow: 15px 8px rgb(29, 26, 52);
+    padding:10px;
+    border: 3px solid rgb(57, 52, 88);
+    border-radius: 5% 10% 10% 5%;
+    background-color:rgb(196, 192, 220);
+    text-align: center;
+    word-wrap: break-word;
+
+}
+h1{
+  font-size: 300%;
+}
+
